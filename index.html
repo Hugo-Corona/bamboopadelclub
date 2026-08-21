@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
- 
+
     :root {
       --carbon:  #0a0a0a;
       --ember:   #141414;
@@ -19,13 +19,13 @@
       --ash:     #86847c;
       --fire:    #e8c765;
     }
- 
+
     body {
       font-family: 'Barlow', sans-serif;
       background: #060606;
       min-height: 200vh;
     }
- 
+
     /* ── HERO ── */
     .hero {
       position: relative;
@@ -36,7 +36,7 @@
       display: flex;
       flex-direction: column;
     }
- 
+
     .hero-bg {
       position: absolute;
       inset: 0;
@@ -45,7 +45,7 @@
         url('https://images.unsplash.com/photo-1641576733595-34f6488653fa?w=1600&q=80') center/cover no-repeat;
       z-index: 0;
     }
- 
+
     /* Línea dorada — acento de cancha */
     .hero-stripe {
       position: absolute;
@@ -61,7 +61,7 @@
         transparent);
       z-index: 1;
     }
- 
+
     /* ── NAV ── */
     nav {
       position: relative;
@@ -71,7 +71,7 @@
       padding: 22px 48px;
       gap: 40px;
     }
- 
+
     .logo {
       display: flex;
       flex-direction: column;
@@ -80,7 +80,7 @@
       transform: translateY(-20px);
       animation: fadeDown 0.7s ease 0.1s forwards;
     }
- 
+
     .logo-wordmark {
       font-family: 'Barlow Condensed', sans-serif;
       font-weight: 800;
@@ -90,12 +90,12 @@
       text-transform: uppercase;
       line-height: 1;
     }
- 
+
     .logo-wordmark em {
       color: var(--amber);
       font-style: normal;
     }
- 
+
     .logo-sub {
       font-size: 9px;
       color: var(--ash);
@@ -103,7 +103,7 @@
       text-transform: uppercase;
       margin-top: 3px;
     }
- 
+
     .nav-links {
       display: flex;
       gap: 28px;
@@ -112,7 +112,7 @@
       opacity: 0;
       animation: fadeDown 0.7s ease 0.3s forwards;
     }
- 
+
     .nav-links a {
       text-decoration: none;
       font-family: 'Barlow Condensed', sans-serif;
@@ -124,16 +124,16 @@
       opacity: 0.75;
       transition: opacity 0.2s, color 0.2s;
     }
- 
+
     .nav-links a:hover,
     .nav-links a.active { opacity: 1; color: var(--amber); }
- 
+
     .nav-phone {
       margin-left: auto;
       opacity: 0;
       animation: fadeDown 0.7s ease 0.5s forwards;
     }
- 
+
     .reserva-btn {
       background: var(--amber);
       color: var(--carbon);
@@ -148,9 +148,9 @@
       cursor: pointer;
       transition: background 0.2s, transform 0.2s;
     }
- 
+
     .reserva-btn:hover { background: var(--fire); transform: scale(1.04); }
- 
+
     /* ── HERO CONTENT ── */
     .hero-content {
       position: relative;
@@ -162,7 +162,7 @@
       padding: 0 48px;
       max-width: 72%;
     }
- 
+
     .hero-eyebrow {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 13px;
@@ -177,7 +177,7 @@
       opacity: 0;
       animation: fadeUp 0.7s ease 0.5s forwards;
     }
- 
+
     .hero-eyebrow::before {
       content: '';
       display: inline-block;
@@ -185,13 +185,13 @@
       height: 2px;
       background: var(--amber);
     }
- 
+
     .hero-title {
       font-family: 'Barlow Condensed', sans-serif;
       line-height: 0.95;
       margin-bottom: 28px;
     }
- 
+
     .hero-title .line1 {
       font-size: clamp(48px, 7vw, 88px);
       font-weight: 700;
@@ -201,7 +201,7 @@
       transform: translateX(-40px);
       animation: slideRight 0.8s cubic-bezier(0.22,1,0.36,1) 0.6s forwards;
     }
- 
+
     .hero-title .line2 {
       font-size: clamp(48px, 7vw, 88px);
       font-weight: 800;
@@ -212,9 +212,9 @@
       transform: translateX(-40px);
       animation: slideRight 0.8s cubic-bezier(0.22,1,0.36,1) 0.85s forwards;
     }
- 
+
     .hero-desc { max-width: 520px; }
- 
+
     .hero-desc p {
       font-size: 17px;
       color: rgba(242,239,228,0.8);
@@ -224,10 +224,10 @@
       opacity: 0;
       transform: translateY(16px);
     }
- 
+
     .hero-desc p:nth-child(1) { animation: fadeUp 0.7s ease 1.1s forwards; }
     .hero-desc p:nth-child(2) { animation: fadeUp 0.7s ease 1.3s forwards; }
- 
+
     .hero-btns {
       display: flex;
       gap: 16px;
@@ -235,7 +235,7 @@
       opacity: 0;
       animation: fadeUp 0.7s ease 1.5s forwards;
     }
- 
+
     .btn-primary {
       background: var(--amber);
       color: var(--carbon);
@@ -250,9 +250,9 @@
       text-transform: uppercase;
       transition: background 0.2s, transform 0.2s;
     }
- 
+
     .btn-primary:hover { background: var(--fire); transform: translateY(-2px); }
- 
+
     .btn-outline {
       background: transparent;
       color: var(--cream);
@@ -267,9 +267,9 @@
       text-transform: uppercase;
       transition: border-color 0.2s, background 0.2s, transform 0.2s;
     }
- 
+
     .btn-outline:hover { border-color: var(--cream); background: rgba(242,239,228,0.07); transform: translateY(-2px); }
- 
+
     /* Stats bar */
     .stats-bar {
       position: relative;
@@ -280,9 +280,9 @@
       opacity: 0;
       animation: fadeUp 0.8s ease 1.7s forwards;
     }
- 
+
     .stat { display: flex; flex-direction: column; }
- 
+
     .stat-num {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 44px;
@@ -290,7 +290,7 @@
       color: var(--cream);
       line-height: 1;
     }
- 
+
     .stat-label {
       font-size: 13px;
       font-weight: 600;
@@ -299,7 +299,7 @@
       letter-spacing: 1px;
       margin-top: 4px;
     }
- 
+
     /* Badge flotante */
     .badge-projects {
       position: absolute;
@@ -318,7 +318,7 @@
       opacity: 0;
       animation: popIn 0.6s cubic-bezier(0.34,1.56,0.64,1) 1.9s forwards;
     }
- 
+
     .badge-icon {
       width: 44px;
       height: 44px;
@@ -330,11 +330,11 @@
       flex-shrink: 0;
       font-size: 22px;
     }
- 
+
     .badge-text { display: flex; flex-direction: column; }
- 
+
     .badge-label { font-size: 11px; color: var(--ash); font-weight: 500; letter-spacing: 1px; text-transform: uppercase; }
- 
+
     .badge-num {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 22px;
@@ -342,7 +342,7 @@
       color: var(--cream);
       line-height: 1.1;
     }
- 
+
     /* WhatsApp */
     .wa-btn {
       position: fixed;
@@ -363,9 +363,9 @@
       opacity: 0;
       animation: popIn 0.5s cubic-bezier(0.34,1.56,0.64,1) 2.2s forwards;
     }
- 
+
     .wa-btn:hover { transform: scale(1.12); box-shadow: 0 6px 28px rgba(37,211,102,0.6); }
- 
+
     .wa-btn::before {
       content: '';
       position: absolute;
@@ -374,7 +374,7 @@
       border: 3px solid rgba(37,211,102,0.5);
       animation: pulse-ring 2s ease-out infinite;
     }
- 
+
     /* ── NOSOTROS (Historia) ── */
     .nosotros {
       background: var(--cream);
@@ -383,7 +383,7 @@
       display: flex;
       flex-direction: column;
     }
- 
+
     .nosotros-nav {
       display: flex;
       justify-content: center;
@@ -392,7 +392,7 @@
       gap: 44px;
       border-bottom: 1px solid rgba(0,0,0,0.1);
     }
- 
+
     .nosotros-nav a {
       text-decoration: none;
       font-family: 'Barlow Condensed', sans-serif;
@@ -403,60 +403,60 @@
       text-transform: uppercase;
       transition: color 0.2s;
     }
- 
+
     .nosotros-nav a:hover { color: var(--carbon); }
     .nosotros-nav a.active { color: var(--carbon); font-weight: 800; border-bottom: 2px solid var(--amber); padding-bottom: 4px; }
- 
+
     .nosotros-body {
       flex: 1;
       display: grid;
       grid-template-columns: 1fr 1fr;
       min-height: calc(100vh - 80px);
     }
- 
+
     .nosotros-left {
       padding: 60px 56px 60px 64px;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
- 
+
     .nosotros-title {
       font-family: 'Barlow Condensed', sans-serif;
       line-height: 1.0;
       margin-bottom: 36px;
       color: var(--carbon);
     }
- 
+
     .nosotros-title .nt-line1 { display: block; font-size: clamp(36px, 5.5vw, 72px); font-weight: 800; }
     .nosotros-title .nt-line2 { display: block; font-size: clamp(36px, 5.5vw, 72px); font-weight: 800; font-style: italic; color: var(--carbon); }
     .nosotros-title .nt-line3 { display: block; font-size: clamp(36px, 5.5vw, 72px); font-weight: 800; font-style: italic; color: #a3821e; }
- 
+
     .nosotros-text { display: flex; flex-direction: column; gap: 20px; }
- 
+
     .nosotros-text p { font-size: 16px; line-height: 1.7; color: #4a4740; font-weight: 400; }
- 
+
     .nosotros-text p strong { color: var(--carbon); font-weight: 700; }
- 
+
     .nosotros-right { position: relative; overflow: hidden; }
- 
+
     .nosotros-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
- 
+
     .nosotros-right:hover .nosotros-img { transform: scale(1.03); }
- 
+
     /* Cintillas decorativas en imagen */
     .nosotros-stripe-left {
       position: absolute; left: 0; top: 0; bottom: 0; width: 8px;
       background: linear-gradient(to bottom, transparent, rgba(201,162,39,0.4) 30%, rgba(201,162,39,0.4) 70%, transparent);
       z-index: 2;
     }
- 
+
     /* ── CANCHAS SECTION ── */
     .menu-section {
       background: var(--cream);
       width: 100%;
     }
- 
+
     .menu-nav {
       display: flex;
       justify-content: center;
@@ -465,7 +465,7 @@
       gap: 44px;
       border-bottom: 1px solid rgba(0,0,0,0.1);
     }
- 
+
     .menu-nav a {
       text-decoration: none;
       font-family: 'Barlow Condensed', sans-serif;
@@ -476,33 +476,33 @@
       text-transform: uppercase;
       transition: color 0.2s;
     }
- 
+
     .menu-nav a:hover { color: var(--carbon); }
     .menu-nav a.active { color: var(--carbon); font-weight: 800; border-bottom: 2px solid var(--amber); padding-bottom: 4px; }
- 
+
     /* Fotos de las canchas */
     .menu-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
- 
+
     .menu-card { position: relative; overflow: hidden; height: 320px; cursor: pointer; }
- 
+
     .menu-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
- 
+
     .menu-card:hover img { transform: scale(1.06); }
- 
+
     .menu-card-overlay {
       position: absolute;
       inset: 0;
       background: linear-gradient(to top, rgba(6,6,6,0.85) 0%, transparent 55%);
       z-index: 2;
     }
- 
+
     .menu-card-label {
       position: absolute;
       bottom: 22px;
       left: 22px;
       z-index: 3;
     }
- 
+
     .menu-card-tag {
       display: inline-block;
       background: var(--amber);
@@ -516,7 +516,7 @@
       border-radius: 3px;
       margin-bottom: 8px;
     }
- 
+
     .menu-card-name {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 24px;
@@ -524,13 +524,13 @@
       color: var(--cream);
       line-height: 1.1;
     }
- 
+
     .menu-card-desc {
       font-size: 13px;
       color: rgba(242,239,228,0.7);
       margin-top: 4px;
     }
- 
+
     /* Panel de servicios */
     .menu-panel {
       background: var(--ember);
@@ -539,7 +539,7 @@
       text-align: center;
       border-top: 3px solid var(--amber);
     }
- 
+
     .menu-panel h2 {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: clamp(36px, 5vw, 64px);
@@ -549,14 +549,14 @@
       color: var(--cream);
       margin-bottom: 16px;
     }
- 
+
     .menu-panel-sub {
       font-size: 15px;
       color: var(--ash);
       margin-bottom: 52px;
       letter-spacing: 1px;
     }
- 
+
     .menu-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -565,14 +565,14 @@
       margin: 0 auto;
       padding: 0 48px;
     }
- 
+
     .menu-item { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 16px; }
- 
+
     .menu-item-icon {
       font-size: 36px;
       margin-bottom: 16px;
     }
- 
+
     .menu-item h3 {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 22px;
@@ -583,7 +583,7 @@
       margin-bottom: 8px;
       line-height: 1.2;
     }
- 
+
     .menu-item .precio {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 18px;
@@ -591,11 +591,11 @@
       color: var(--cream);
       margin-bottom: 12px;
     }
- 
+
     .menu-item p { font-size: 14px; line-height: 1.7; color: rgba(242,239,228,0.65); font-weight: 300; }
- 
+
     .menu-item + .menu-item { border-left: 1px solid rgba(201,162,39,0.2); }
- 
+
     /* ── GALERÍA ── */
     .galeria {
       background: var(--carbon);
@@ -603,7 +603,7 @@
       position: relative;
       overflow: hidden;
     }
- 
+
     .galeria::before {
       content: '';
       position: absolute;
@@ -614,7 +614,7 @@
       pointer-events: none;
       z-index: 0;
     }
- 
+
     .galeria-nav {
       display: flex;
       justify-content: center;
@@ -625,7 +625,7 @@
       position: relative;
       z-index: 2;
     }
- 
+
     .galeria-nav a {
       text-decoration: none;
       font-family: 'Barlow Condensed', sans-serif;
@@ -636,10 +636,10 @@
       text-transform: uppercase;
       transition: color 0.2s;
     }
- 
+
     .galeria-nav a:hover { color: var(--cream); }
     .galeria-nav a.active { color: var(--amber); font-weight: 800; }
- 
+
     .galeria-header {
       position: relative;
       z-index: 2;
@@ -649,7 +649,7 @@
       justify-content: space-between;
       gap: 32px;
     }
- 
+
     .galeria-eyebrow {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 13px;
@@ -662,7 +662,7 @@
       align-items: center;
       gap: 12px;
     }
- 
+
     .galeria-eyebrow::before {
       content: '';
       display: inline-block;
@@ -670,7 +670,7 @@
       height: 2px;
       background: var(--amber);
     }
- 
+
     .galeria-header h2 {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: clamp(42px, 6vw, 82px);
@@ -680,9 +680,9 @@
       line-height: 0.95;
       letter-spacing: -1px;
     }
- 
+
     .galeria-header h2 span { color: var(--amber); font-style: italic; }
- 
+
     .galeria-counter {
       display: flex;
       flex-direction: column;
@@ -690,7 +690,7 @@
       padding-bottom: 8px;
       flex-shrink: 0;
     }
- 
+
     .galeria-counter-num {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: clamp(64px, 9vw, 120px);
@@ -701,7 +701,7 @@
       letter-spacing: -4px;
       user-select: none;
     }
- 
+
     .galeria-counter-label {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 13px;
@@ -711,7 +711,7 @@
       color: rgba(242,239,228,0.35);
       margin-top: -8px;
     }
- 
+
     .galeria-nav-bar {
       position: relative;
       z-index: 2;
@@ -720,7 +720,7 @@
       align-items: center;
       gap: 24px;
     }
- 
+
     .galeria-nav-bar .proy-num-current {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 48px;
@@ -729,23 +729,23 @@
       line-height: 1;
       min-width: 60px;
     }
- 
+
     .galeria-nav-bar .proy-divider { font-family: 'Barlow Condensed', sans-serif; font-size: 24px; color: rgba(255,255,255,0.2); }
- 
+
     .galeria-nav-bar .proy-num-total { font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 600; color: rgba(255,255,255,0.3); }
- 
+
     .proy-progress-wrap { flex: 1; height: 2px; background: rgba(201,162,39,0.15); border-radius: 2px; overflow: hidden; }
- 
+
     .proy-progress-bar { height: 100%; background: var(--amber); border-radius: 2px; transition: width 0.5s cubic-bezier(0.4,0,0.2,1); }
- 
+
     .proy-info-inline { flex: 2; }
- 
+
     .proy-info-nombre { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 700; color: var(--cream); letter-spacing: 0.5px; line-height: 1.2; transition: opacity 0.4s ease; }
- 
+
     .proy-info-lugar { font-size: 13px; color: var(--amber); font-weight: 400; letter-spacing: 1px; margin-top: 3px; transition: opacity 0.4s ease; }
- 
+
     .proy-nav-btns { display: flex; gap: 12px; }
- 
+
     .proy-nav-btn {
       width: 56px;
       height: 56px;
@@ -762,30 +762,30 @@
       min-width: 44px;
       min-height: 44px;
     }
- 
+
     .proy-nav-btn:hover { background: var(--amber); border-color: var(--amber); color: var(--carbon); transform: scale(1.08); }
- 
+
     .galeria-stage { position: relative; z-index: 2; padding: 0 64px 80px; }
- 
+
     .proy-grid {
       display: none;
       grid-template-columns: 1.6fr 1fr;
       gap: 16px;
       animation: proySlideIn 0.6s cubic-bezier(0.22,1,0.36,1) forwards;
     }
- 
+
     .proy-grid.active { display: grid; }
- 
+
     .proy-main-img { grid-column: 1; grid-row: 1 / 3; position: relative; border-radius: 6px; overflow: hidden; height: 540px; cursor: pointer; }
- 
+
     .proy-main-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
- 
+
     .proy-main-img:hover img { transform: scale(1.04); }
- 
+
     .proy-main-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(6,6,6,0.88) 0%, transparent 50%); z-index: 2; pointer-events: none; }
- 
+
     .proy-main-label { position: absolute; bottom: 28px; left: 28px; z-index: 3; }
- 
+
     .proy-main-tag {
       display: inline-flex;
       align-items: center;
@@ -801,31 +801,31 @@
       border-radius: 4px;
       margin-bottom: 12px;
     }
- 
+
     .proy-main-title { font-family: 'Barlow Condensed', sans-serif; font-size: 28px; font-weight: 800; color: var(--cream); line-height: 1.1; }
- 
+
     .proy-side-imgs { grid-column: 2; grid-row: 1 / 3; display: flex; flex-direction: column; gap: 16px; }
- 
+
     .proy-side-img { position: relative; border-radius: 6px; overflow: hidden; height: 100%; flex: 1; cursor: pointer; min-height: 0; }
- 
+
     .proy-side-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
- 
+
     .proy-side-img:hover img { transform: scale(1.06); }
- 
+
     .proy-side-img::after { content: ''; position: absolute; inset: 0; background: rgba(6,6,6,0.25); opacity: 0; transition: opacity 0.3s ease; }
- 
+
     .proy-side-img:hover::after { opacity: 1; }
- 
+
     .proy-side-num { position: absolute; top: 14px; right: 14px; z-index: 3; font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: rgba(242,239,228,0.7); background: rgba(6,6,6,0.55); padding: 4px 10px; border-radius: 20px; }
- 
+
     .proy-dots { display: flex; align-items: center; gap: 10px; margin-top: 28px; justify-content: center; }
- 
+
     .proy-dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(201,162,39,0.2); cursor: pointer; transition: all 0.3s ease; border: none; padding: 0; min-width: 44px; min-height: 44px; }
- 
+
     .proy-dot.active { background: var(--amber); width: 28px; border-radius: 4px; }
- 
+
     .proy-dot:hover:not(.active) { background: rgba(201,162,39,0.5); }
- 
+
     /* ── CONTACTO ── */
     .contacto {
       background: var(--ember);
@@ -835,7 +835,7 @@
       padding-top: 80px;
       border-top: 3px solid var(--amber);
     }
- 
+
     .contacto-nav {
       display: flex;
       justify-content: center;
@@ -846,7 +846,7 @@
       position: relative;
       z-index: 2;
     }
- 
+
     .contacto-nav a {
       text-decoration: none;
       font-family: 'Barlow Condensed', sans-serif;
@@ -857,10 +857,10 @@
       text-transform: uppercase;
       transition: color 0.2s;
     }
- 
+
     .contacto-nav a:hover { color: var(--cream); }
     .contacto-nav a.active { color: var(--amber); font-weight: 800; }
- 
+
     .contacto-logo {
       position: absolute;
       top: -60px;
@@ -873,15 +873,15 @@
       transform: translateY(-10px);
       transition: opacity 0.8s ease 0.3s, transform 0.8s ease 0.3s;
     }
- 
+
     .contacto-logo.visible { opacity: 1; transform: translateY(0); }
- 
+
     .contacto-logo-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 26px; color: var(--cream); letter-spacing: 3px; }
- 
+
     .contacto-logo-name em { color: var(--amber); font-style: normal; }
- 
+
     .contacto-logo-sub { font-size: 8px; color: var(--ash); letter-spacing: 3px; text-transform: uppercase; }
- 
+
     .contacto-stripe {
       position: absolute;
       right: 38%;
@@ -892,17 +892,17 @@
       z-index: 1;
       pointer-events: none;
     }
- 
+
     .contacto-body { display: grid; grid-template-columns: 1fr 1fr; position: relative; z-index: 2; }
- 
+
     .contacto-left { padding: 52px 56px 0 64px; display: flex; flex-direction: column; gap: 24px; }
- 
+
     .contacto-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(30px, 4vw, 54px); font-weight: 800; color: var(--cream); text-transform: uppercase; line-height: 1.05; }
- 
+
     .contacto-desc { font-size: 16px; color: rgba(242,239,228,0.65); line-height: 1.7; font-weight: 300; max-width: 480px; }
- 
+
     .contacto-cta { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(22px, 3vw, 38px); font-weight: 800; color: var(--amber); text-transform: uppercase; line-height: 1.1; }
- 
+
     .contacto-info {
       background: rgba(0,0,0,0.3);
       padding: 32px 64px 36px;
@@ -914,25 +914,25 @@
       grid-column: 1 / -1;
       border-top: 1px solid rgba(201,162,39,0.15);
     }
- 
+
     .contacto-item { display: flex; align-items: center; gap: 18px; }
- 
+
     .contacto-icon { width: 48px; height: 48px; border-radius: 6px; background: rgba(201,162,39,0.15); border: 1px solid rgba(201,162,39,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
- 
+
     .contacto-icon svg { width: 22px; height: 22px; stroke: var(--amber); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
- 
+
     .contacto-item-text { display: flex; flex-direction: column; }
- 
+
     .contacto-item-label { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; color: var(--cream); letter-spacing: 0.5px; }
- 
+
     .contacto-item-value { font-size: 15px; color: var(--ash); font-weight: 300; }
- 
+
     .contacto-right { position: relative; overflow: hidden; min-height: 420px; }
- 
+
     .contacto-right img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
- 
+
     .contacto-right:hover img { transform: scale(1.04); }
- 
+
     /* Horario especial */
     .horario-badge {
       position: absolute;
@@ -944,7 +944,7 @@
       padding: 16px 20px;
       z-index: 3;
     }
- 
+
     .horario-badge-title {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 12px;
@@ -954,21 +954,21 @@
       text-transform: uppercase;
       margin-bottom: 8px;
     }
- 
+
     .horario-badge-row {
       font-size: 14px;
       color: rgba(242,239,228,0.8);
       margin-bottom: 4px;
     }
- 
+
     .horario-badge-row strong {
       color: var(--cream);
       font-weight: 700;
     }
- 
+
     /* MOBILE */
     .mobile-menu-toggle { display: none; }
- 
+
     @media (max-width: 768px) {
       nav { padding: 16px 20px; flex-wrap: wrap; position: relative; }
       .logo { order: 1; flex: 1; opacity: 1; transform: none; }
@@ -1019,7 +1019,7 @@
       .contacto-logo { position: static; margin-top: 16px; opacity: 1; transform: none; }
       .wa-btn { width: 50px; height: 50px; bottom: 16px; right: 16px; }
     }
- 
+
     /* ── ANIMACIONES ── */
     @keyframes fadeDown { to { opacity: 1; transform: translateY(0); } }
     @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
@@ -1028,10 +1028,10 @@
     @keyframes countPop { 0%{transform:scale(1)} 50%{transform:scale(1.15)} 100%{transform:scale(1)} }
     @keyframes pulse-ring { 0%{transform:scale(1);opacity:.7} 100%{transform:scale(1.4);opacity:0} }
     @keyframes proySlideIn { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
- 
+
     .char { display: inline-block; opacity: 0; transform: translateY(12px); animation: charIn 0.4s ease forwards; }
     @keyframes charIn { to { opacity: 1; transform: translateY(0); } }
- 
+
     .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
     .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.8s ease, transform 0.8s ease; }
@@ -1041,18 +1041,18 @@
   </style>
 </head>
 <body>
- 
+
   <!-- ══ HERO ══ -->
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-stripe"></div>
- 
+
     <nav>
       <div class="logo">
         <div class="logo-wordmark"><em>Bamboo</em> Padel</div>
         <div class="logo-sub">Club de pádel · Desde 2016</div>
       </div>
- 
+
       <ul class="nav-links" id="nav-links">
         <li><a href="#" class="active">Inicio</a></li>
         <li><a href="#nosotros">Historia</a></li>
@@ -1060,34 +1060,34 @@
         <li><a href="#galeria">Galería</a></li>
         <li><a href="#contacto">Reservaciones</a></li>
       </ul>
- 
+
       <div class="nav-phone">
         <button class="reserva-btn" onclick="reservarWhatsApp()">Reservar cancha</button>
       </div>
- 
+
       <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
     </nav>
- 
+
     <div class="hero-content">
       <div class="hero-eyebrow">Club de pádel premium</div>
       <h1 class="hero-title">
         <span class="line1" id="line1">Juega fuerte</span>
         <span class="line2" id="line2">vive el pádel</span>
       </h1>
- 
+
       <div class="hero-desc">
         <p>Canchas panorámicas de cristal templado, iluminación profesional y el mejor ambiente para tu juego.</p>
         <p>Bamboo Padel nació para los que aman competir — sin importar tu nivel, aquí encuentras tu cancha.</p>
       </div>
- 
+
       <div class="hero-btns">
         <button class="btn-primary" onclick="reservarWhatsApp()">Reservar cancha</button>
         <button class="btn-outline">Nuestras instalaciones</button>
       </div>
     </div>
- 
+
     <div class="stats-bar">
       <div class="stat">
         <span class="stat-num" data-target="8" data-suffix="">0</span>
@@ -1102,7 +1102,7 @@
         <span class="stat-label">Jugadores que regresan</span>
       </div>
     </div>
- 
+
     <div class="badge-projects">
       <div class="badge-icon">🎾</div>
       <div class="badge-text">
@@ -1111,7 +1111,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- ══ HISTORIA ══ -->
   <section class="nosotros" id="nosotros">
     <nav class="nosotros-nav reveal">
@@ -1121,7 +1121,7 @@
       <a href="#galeria">Galería</a>
       <a href="#contacto">Reservaciones</a>
     </nav>
- 
+
     <div class="nosotros-body">
       <div class="nosotros-left">
         <h2 class="nosotros-title reveal-left" style="transition-delay:0.1s">
@@ -1129,7 +1129,7 @@
           <span class="nt-line2">que se juega</span>
           <span class="nt-line3">en equipo</span>
         </h2>
- 
+
         <div class="nosotros-text">
           <p class="reveal" style="transition-delay:0.25s">
             <strong>Bamboo Padel</strong> nació en 2016 de una idea clara: crear el <strong>mejor club de pádel</strong> de la ciudad, con canchas de nivel profesional y una comunidad que compite y disfruta por igual.
@@ -1142,7 +1142,7 @@
           </p>
         </div>
       </div>
- 
+
       <div class="nosotros-right reveal-right" style="transition-delay:0.2s">
         <div class="nosotros-stripe-left"></div>
         <img class="nosotros-img"
@@ -1151,7 +1151,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- ══ CANCHAS ══ -->
   <section class="menu-section" id="menu">
     <nav class="menu-nav reveal">
@@ -1161,7 +1161,7 @@
       <a href="#galeria">Galería</a>
       <a href="#contacto">Reservaciones</a>
     </nav>
- 
+
     <!-- Fotos de las canchas -->
     <div class="menu-cards">
       <div class="menu-card reveal" style="transition-delay:0.1s">
@@ -1173,7 +1173,7 @@
           <div class="menu-card-desc">Cristal templado · Vista total</div>
         </div>
       </div>
- 
+
       <div class="menu-card reveal" style="transition-delay:0.25s">
         <img src="https://images.unsplash.com/photo-1641576733595-34f6488653fa?w=720&q=80" alt="Cancha iluminada Bamboo Padel" loading="lazy">
         <div class="menu-card-overlay"></div>
@@ -1183,7 +1183,7 @@
           <div class="menu-card-desc">LED profesional · Juega de noche</div>
         </div>
       </div>
- 
+
       <div class="menu-card reveal" style="transition-delay:0.4s">
         <img src="https://images.unsplash.com/photo-1761644541691-2a746c638881?w=720&q=80" alt="Cancha premium Bamboo Padel" loading="lazy">
         <div class="menu-card-overlay"></div>
@@ -1194,7 +1194,7 @@
         </div>
       </div>
     </div>
- 
+
     <!-- Panel de servicios -->
     <div class="menu-panel">
       <h2 class="reveal">Nuestros Servicios</h2>
@@ -1221,7 +1221,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- ══ GALERÍA ══ -->
   <section class="galeria" id="galeria">
     <nav class="galeria-nav reveal">
@@ -1231,7 +1231,7 @@
       <a href="#galeria" class="active">Galería</a>
       <a href="#contacto">Reservaciones</a>
     </nav>
- 
+
     <div class="galeria-header reveal">
       <div>
         <div class="galeria-eyebrow">Momentos en Bamboo Padel</div>
@@ -1242,27 +1242,27 @@
         <div class="galeria-counter-label">Años de pasión</div>
       </div>
     </div>
- 
+
     <div class="galeria-nav-bar reveal" style="transition-delay:0.15s">
       <span class="proy-num-current" id="proy-num-current">01</span>
       <span class="proy-divider">/</span>
       <span class="proy-num-total">03</span>
- 
+
       <div class="proy-progress-wrap">
         <div class="proy-progress-bar" id="proy-progress-bar" style="width:33.33%"></div>
       </div>
- 
+
       <div class="proy-info-inline">
         <div class="proy-info-nombre" id="proy-info-nombre">Nuestras canchas</div>
         <div class="proy-info-lugar" id="proy-info-lugar">Cristal, luz y precisión</div>
       </div>
- 
+
       <div class="proy-nav-btns">
         <button class="proy-nav-btn" onclick="cambiarProyecto(-1)" aria-label="Anterior">&#8592;</button>
         <button class="proy-nav-btn" onclick="cambiarProyecto(1)" aria-label="Siguiente">&#8594;</button>
       </div>
     </div>
- 
+
     <div class="galeria-stage">
       <!-- Escena 1: Las canchas -->
       <div class="proy-grid active" data-proyecto="1">
@@ -1285,7 +1285,7 @@
           </div>
         </div>
       </div>
- 
+
       <!-- Escena 2: En plena jugada -->
       <div class="proy-grid" data-proyecto="2">
         <div class="proy-main-img">
@@ -1307,7 +1307,7 @@
           </div>
         </div>
       </div>
- 
+
       <!-- Escena 3: La comunidad -->
       <div class="proy-grid" data-proyecto="3">
         <div class="proy-main-img">
@@ -1329,7 +1329,7 @@
           </div>
         </div>
       </div>
- 
+
       <div class="proy-dots">
         <button class="proy-dot active" onclick="irAProyecto(1)" aria-label="Vista 1"></button>
         <button class="proy-dot" onclick="irAProyecto(2)" aria-label="Vista 2"></button>
@@ -1337,7 +1337,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- ══ CONTACTO / RESERVACIONES ══ -->
   <section class="contacto" id="contacto">
     <nav class="contacto-nav reveal" style="position:relative">
@@ -1346,15 +1346,15 @@
       <a href="#menu">Canchas</a>
       <a href="#galeria">Galería</a>
       <a href="#contacto" class="active">Reservaciones</a>
- 
+
       <div class="contacto-logo reveal" style="transition-delay:0.3s">
         <div class="contacto-logo-name"><em>Bamboo</em> Padel</div>
         <div class="contacto-logo-sub">Club de pádel</div>
       </div>
     </nav>
- 
+
     <div class="contacto-stripe"></div>
- 
+
     <div class="contacto-body">
       <div class="contacto-left">
         <h2 class="contacto-title reveal-left" style="transition-delay:0.1s">
@@ -1367,7 +1367,7 @@
           ¿Listo para tu<br>siguiente partido?
         </p>
       </div>
- 
+
       <div class="contacto-right reveal-right" style="transition-delay:0.2s">
         <img src="https://images.unsplash.com/photo-1646649853703-7645147474ba?w=800&q=80" alt="Bamboo Padel club" loading="lazy">
         <div class="horario-badge">
@@ -1376,7 +1376,7 @@
           <div class="horario-badge-row"><strong>Sáb – Dom</strong> &nbsp; 7:00 am – 10:00 pm</div>
         </div>
       </div>
- 
+
       <div class="contacto-info">
         <div class="contacto-item reveal" style="transition-delay:0.1s">
           <div class="contacto-icon">
@@ -1387,7 +1387,7 @@
             <span class="contacto-item-value">312 385 9248</span>
           </div>
         </div>
- 
+
         <div class="contacto-item reveal" style="transition-delay:0.25s">
           <div class="contacto-icon">
             <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
@@ -1397,7 +1397,7 @@
             <span class="contacto-item-value">hola@bamboopadel.mx</span>
           </div>
         </div>
- 
+
         <div class="contacto-item reveal" style="transition-delay:0.4s">
           <div class="contacto-icon">
             <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
@@ -1407,7 +1407,7 @@
             <span class="contacto-item-value">Av. Bamboo 123, Colima, Col.</span>
           </div>
         </div>
- 
+
         <div class="contacto-item reveal" style="transition-delay:0.55s">
           <div class="contacto-icon">
             <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
@@ -1420,21 +1420,21 @@
       </div>
     </div>
   </section>
- 
+
   <!-- WhatsApp -->
   <a class="wa-btn" href="https://wa.me/523123859248" target="_blank" rel="noopener" title="Reserva por WhatsApp">
     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M16 3C8.82 3 3 8.82 3 16c0 2.39.63 4.63 1.73 6.57L3 29l6.63-1.69A13.03 13.03 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm0 23.75a10.73 10.73 0 0 1-5.47-1.5l-.39-.23-4.02 1.03 1.06-3.91-.26-.4A10.75 10.75 0 1 1 16 26.75Zm5.88-8.08c-.32-.16-1.91-.94-2.2-1.04-.3-.11-.51-.16-.73.16-.21.32-.83 1.04-1.02 1.25-.19.21-.38.24-.7.08-.32-.16-1.36-.5-2.59-1.59-.96-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.5.14-.66.15-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.57-.08-.16-.73-1.75-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.21 0-.55.08-.84.4-.29.32-1.1 1.08-1.1 2.63 0 1.55 1.13 3.04 1.28 3.25.16.21 2.22 3.39 5.38 4.75.75.33 1.34.52 1.8.66.76.24 1.44.21 1.99.13.6-.09 1.91-.78 2.18-1.54.27-.75.27-1.4.19-1.54-.08-.14-.29-.21-.61-.38Z" fill="white"/>
     </svg>
   </a>
- 
+
   <script>
     /* RESERVAR POR WHATSAPP */
     function reservarWhatsApp() {
       const mensaje = encodeURIComponent('Quiero reservar ya una cancha');
       window.open(`https://wa.me/523123859248?text=${mensaje}`, '_blank');
     }
- 
+
     /* COUNTER ANIMATION */
     function animateCounter(el, start, end, suffix, prefix, duration) {
       let startTime = null;
@@ -1449,13 +1449,13 @@
       };
       requestAnimationFrame(step);
     }
- 
+
     setTimeout(() => {
       document.querySelectorAll('[data-target]').forEach(el => {
         animateCounter(el, 0, parseInt(el.dataset.target), el.dataset.suffix ?? '', el.dataset.prefix ?? '', 1800);
       });
     }, 1900);
- 
+
     /* CHARACTER ANIMATION */
     function splitAndAnimate(el, baseDelay) {
       const text = el.textContent;
@@ -1471,19 +1471,19 @@
         el.appendChild(span);
       });
     }
- 
+
     setTimeout(() => splitAndAnimate(document.getElementById('line1'), 0), 600);
     setTimeout(() => splitAndAnimate(document.getElementById('line2'), 0), 850);
- 
+
     /* SCROLL REVEAL */
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); }
       });
     }, { threshold: 0.1 });
- 
+
     document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObserver.observe(el));
- 
+
     /* MOBILE MENU */
     function toggleMobileMenu() {
       const nav = document.querySelector('.nav-links');
@@ -1493,24 +1493,24 @@
       btn.classList.toggle('active');
       btn.setAttribute('aria-expanded', !isOpen);
     }
- 
+
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         document.querySelector('.nav-links').classList.remove('active');
         document.querySelector('.mobile-menu-toggle').classList.remove('active');
       });
     });
- 
+
     /* GALERÍA CAROUSEL */
     let proyectoActual = 1;
     const totalProyectos = 3;
- 
+
     const datosProyectos = {
       1: { nombre: 'Nuestras canchas', lugar: 'Cristal, luz y precisión' },
       2: { nombre: 'En plena jugada', lugar: 'Velocidad y estrategia' },
       3: { nombre: 'La comunidad Bamboo', lugar: 'Torneos y buena vibra' }
     };
- 
+
     function actualizarUI() {
       document.querySelectorAll('.proy-grid').forEach(g => g.classList.remove('active'));
       document.querySelector(`.proy-grid[data-proyecto="${proyectoActual}"]`).classList.add('active');
@@ -1528,18 +1528,18 @@
         nombreEl.style.opacity = '1'; lugarEl.style.opacity = '1';
       }, 200);
     }
- 
+
     function cambiarProyecto(dir) {
       proyectoActual += dir;
       if (proyectoActual > totalProyectos) proyectoActual = 1;
       if (proyectoActual < 1) proyectoActual = totalProyectos;
       actualizarUI();
     }
- 
+
     function irAProyecto(n) { proyectoActual = n; actualizarUI(); }
- 
+
     setInterval(() => cambiarProyecto(1), 6000);
- 
+
     const stage = document.querySelector('.galeria-stage');
     if (stage) {
       let touchStartX = 0;
